@@ -1,6 +1,5 @@
 export const contractAddress = "0x60359150027bE569a107e7b4b624d06D74fBA7cB";
 export const contractABI = [
-    [
         {
           "inputs": [],
           "stateMutability": "nonpayable",
@@ -478,5 +477,4 @@ export const contractABI = [
           "stateMutability": "nonpayable",
           "type": "function"
         }
-      ]
-    ];
+      ];
