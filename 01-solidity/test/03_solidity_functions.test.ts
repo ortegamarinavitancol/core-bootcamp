@@ -37,5 +37,20 @@ describe("SolidityFunctions", function () {
       const balance = await ctcSolidityFunctions.getBalance();
       console.log("balance is now ", balance);
     });
+    it("calculator charan", async function () {
+      const { ctcSolidityFunctions } = await loadFixture(deploy);
+      await ctcSolidityFunctions.calculator(1,25_000);
+      let balance = await ctcSolidityFunctions.getBalance();
+       console.log("current balance ", balance);
+      await ctcSolidityFunctions.calculator(2,25_000);
+       balance = await ctcSolidityFunctions.getBalance();
+       console.log("current balance ", balance);
+      await ctcSolidityFunctions.calculator(3,25_000);
+       balance = await ctcSolidityFunctions.getBalance();
+       console.log("current balance ", balance);
+      await ctcSolidityFunctions.calculator(4,25_000);
+       balance = await ctcSolidityFunctions.getBalance();
+      console.log("current balance ", balance);
+    });
   });
 });
