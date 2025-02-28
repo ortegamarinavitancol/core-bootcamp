@@ -15,7 +15,7 @@ contract DOMDOM is ERC721URIStorage {
         _safeMint(msg.sender, tokenId);
          _setTokenURI(
             tokenId,
-            "https://https://raw.githubusercontent.com/ortegamarinavitancol/core-bootcamp/refs/heads/main/04-erc721/metadata.json"
+            "https://raw.githubusercontent.com/ortegamarinavitancol/core-bootcamp/refs/heads/main/04-erc721/metadata.json"
          );
          tokenId++;
     }
